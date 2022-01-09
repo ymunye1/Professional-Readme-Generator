@@ -46,13 +46,28 @@ inquire
 
 
  
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.makeFile(fileName, data, function(err){
+        if (err) {
+            return console.log(`Error`)
+        }else{
+            console.log('Making a new README.md')
+        }
+    }
+// TODO: Create a function to initialize app
+function init() {
+   inquire.prompt
+   .then(answers => {
+    const infoToReadme = generateMarkdown(answers);
+    writeToFile('./utils/README.md', infoToReadme);
+   })
 
-// // TODO: Create a function to initialize app
-// function init() {
-//     node index.js
-// }
+   .catch(err => { 
+       console.log(err)
+    });
+    
+}
 
-// // Function call to initialize app
-// init();
+// Function call to initialize app
+init();
