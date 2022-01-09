@@ -29,13 +29,13 @@ inquire
     {
         type: 'list',
         name: 'license',
-        message: 'What license will be used?'
-        choices: ['MIT','ISC', 'APACHE']
+        message: 'What license will be used?',
+        choices: ['MIT','ISC', 'APACHE 2.0']
     },
     {
         type: 'input',
         name: 'install',
-        message: 'How to install dependecies?'
+        message: 'How to install dependecies?',
         default: 'npm i'
     },
 ])
@@ -54,7 +54,7 @@ function writeToFile(fileName, data) {
         }else{
             console.log('Making a new README.md')
         }
-    }
+    })
 // TODO: Create a function to initialize app
 function init() {
    inquire.prompt
