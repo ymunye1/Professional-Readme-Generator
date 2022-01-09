@@ -1,8 +1,22 @@
 // TODO: Include packages needed for this application
-const inquire = ('inquire');
+const inquire = require('inquirer')
 // TODO: Create an array of questions for user input
 const questions = [
-    'What is the title to your Project'
+    {
+        question: 'What is your GitHub username'
+    },
+    {
+        question: 'What is your email address'
+    },
+    {
+        question: 'What is your project name'
+    },
+    {
+        question: 'Write a description of your project'
+    },
+    {
+        question: ''
+    }
 ];
 
 // TODO: Create a function to write README file
