@@ -7,7 +7,16 @@ const generateMarkdown = require('./utils/generateMarkdown')
 // inquire
 //  .prompt([
 const questions = [
-   
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
+    },
     {
         type: 'input',
         name: 'title',
@@ -47,17 +56,6 @@ const questions = [
         default: 'npm i'
     },
 ]
-
-{
-    type: 'input',
-    name: 'github',
-    message: 'What is your GitHub username?'
-},
-{
-    type: 'input',
-    name: 'email',
-    message: 'What is your email address?'
-},
 
  
 // TODO: Create a function to write README file
