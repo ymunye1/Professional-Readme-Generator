@@ -7,16 +7,9 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ymunye1/Professional-Readme-Generator.git"
-  },
+
   "author": "Yasin Munye",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ymunye1/Professional-Readme-Generator/issues"
-  },
-  "homepage": "https://github.com/ymunye1/Professional-Readme-Generator#readme",
   "dependencies": {
     "inquirer": "^8.2.0"
   }
