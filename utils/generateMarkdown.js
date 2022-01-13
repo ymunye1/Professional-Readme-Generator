@@ -5,8 +5,8 @@ switch (license) {
   case 'MIT':
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)"
     break;
-  case 'Apache 2.0':
-    return "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue)](https://opensource.org/licenses/Apache-2.0)"
+  case 'APACHE 2.0':
+    return "[![License: APACHE 2.0](https://img.shields.io/badge/License-Apache%202.0-blue)](https://opensource.org/licenses/Apache-2.0)"
     break;
   case 'ISC':
     return "[![License: MIT](https://img.shields.io/badge/License-ISC-orange)] (https://opensource.org/licenses/ISC)"
